@@ -1,0 +1,44 @@
+
+<div class="row top-container">
+  <div class="col-xs-8">
+    <form (submit)="onSubmit(heroForm)" #heroForm="ngForm" class="inline">
+      Initial Power Level:
+      <select name="strength" [(ngModel)]="power.strength">
+        <option *ngFor="let x of numbers" value="{{x}}">{{x}}</option>
+      </select>
+      <button type="submit">Calculate Powers</button>
+    </form>
+  </div>
+  <div class="col-xs-4 img-responsive">
+    <img class="img-container" src="assets/img/dragon1.png" alt="responsive-img">
+  </div>
+  <div class="row middle-container container">
+    <div class="col-xs-4 box-size-4">
+      <p class="inner-box">HumanComponent</p>
+      <app-saiyan [human]="human"></app-saiyan>
+    </div>
+    <div class="col-xs-4 box-size-4">
+      <p class="inner-box">SaiyenComponent</p>
+      <app-saiyan [human]="saiyan"></app-saiyan>
+    </div>
+    <div class="col-xs-4 box-size-4">
+      <p class="inner-box">SuperSaiyenComponent</p>
+      <app-saiyan [human]="superSaiyan"></app-saiyan>
+    </div>
+  </div>
+  <div class="row last-container container">
+    <div class="col-xs-4 box-size-4">
+      <p class="inner-box">SuperSaiyenTwoComponent</p>
+      <app-saiyan [human]="superSaiyanTwo"></app-saiyan>
+    </div>
+    <div class="col-xs-4 box-size-4">
+      <p class="inner-box">SuperSaiyenThreeComponent</p>
+      <app-saiyan [human]="superSaiyanThree"></app-saiyan>
+    </div>
+    <div class="col-xs-4 box-size-4">
+      <p class="inner-box">SuperSaiyenFourComponent</p>
+      <app-saiyan [human]="superSaiyanFour"></app-saiyan>
+    </div>
+  </div>
+</div>
+

@@ -1,0 +1,11 @@
+
+<p>Power Level:     {{ human }}</p>
+<div [hidden]="!(human > 9000)">
+  <h5>"Over 9000!"</h5>
+</div>
+<div *ngIf="(human > 25000)">
+  <h5>"Superlative!"</h5>
+</div>
+<div *ngIf="(human > 50000)">
+  <h5>"The One!"</h5>
+</div>

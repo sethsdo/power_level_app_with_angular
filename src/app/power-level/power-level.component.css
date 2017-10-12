@@ -1,0 +1,20 @@
+
+.img-container {
+    width: 100px;
+    height: 100px;
+}
+.box-size-4 {
+    border: 1px solid black;
+    height: 150px;
+}
+.row {
+    margin-top: inherit;
+}
+.inner-box {
+    position: relative;
+    top: -13px;
+    background-color: white;
+    width: 180px;
+    text-align: center;
+    margin-left: 20px
+}
